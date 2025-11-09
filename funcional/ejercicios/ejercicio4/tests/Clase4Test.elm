@@ -28,13 +28,13 @@ suite =
         , describe "Parte 1: Pattern Matching con Árboles"
             [ test "4. Tamaño - árbol vacío" <|
                 \_ ->
-                    Expect.equal 0 (tamaño Empty)
+                    Expect.equal 0 (tamano Empty)
             , test "4. Tamaño - hoja" <|
                 \_ ->
-                    Expect.equal 1 (tamaño (Node 5 Empty Empty))
+                    Expect.equal 1 (tamano (Node 5 Empty Empty))
             , test "4. Tamaño - árbol pequeño" <|
                 \_ ->
-                    Expect.equal 3 (tamaño arbolPequeno)
+                    Expect.equal 3 (tamano arbolPequeno)
             , test "5. Altura - árbol vacío" <|
                 \_ ->
                     Expect.equal 0 (altura Empty)
